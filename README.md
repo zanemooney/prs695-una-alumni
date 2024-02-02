@@ -44,17 +44,17 @@ Simple code like:
 Thanks, Cumbie for the reminder!
 
 <h3>Option 2 | task size = L</h3>
-<p>We make an entire CRUD database using very basic php, sql, and html.
+<p>We make an entire CRUD database using very basic PHP, SQL, and HTML.
 **Functionality (Scope):**
   
 1. **Create** a new username (following a strict format: firstInitialfirstFourLettersOfLastName ex. zmoon)
 
-_**Existing code that Zane has done and can be edited to make fit this project:**_
+_**Existing code that Zane has done and can be edited to fit this project:**_
 ```php
 <?php session_start();
     if (!isset($_SESSION['username'])) {
         header("location:index.php");
-        // Make sure that code below does not execute when we redirect.
+        // Make sure that the code below does not execute when we redirect.
         exit;
     }
 ?>
@@ -76,9 +76,9 @@ _**Existing code that Zane has done and can be edited to make fit this project:*
 </html>
 ```
 
-2. **Read** existing usernames in "auth.php"
+2. **Read** existing usernames in "authenticate.php"
 
-_**Existing code that Zane has done and can be edited to make fit this project:**_
+_**Existing code that Zane has done and can be edited to fit this project:**_
 ```php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -127,16 +127,16 @@ header("location:index.php");
 
 ```
   
-3. **UPDATE** existing usernames (incase of name change or a typo)
+3. **UPDATE** existing usernames (in case of name change or a typo)
 
 
-_**Existing code that Zane has done and can be edited to make fit this project:**_
+_**Existing code that Zane has done and can be edited to fit this project:**_
 
 ```php
 <?php session_start();
 if (!isset($_SESSION['username'])) {
     header("location:index.php");
-    // Make sure that code below does not execute when we redirect.
+    // Make sure that the code below does not execute when we redirect.
     exit;
 }
 
@@ -150,22 +150,22 @@ $sql = "UPDATE games SET opponent='$opponent', site='$site', result='$result' WH
 // else
 
 //TODO: set the error in the session to read "Error updating record: "
-// and append the sql error message from the database
+// and append the SQL error message from the database
 
 
-// TODO: close the db connection
+// TODO: close the DB connection
 header("location:index.php");
 ?>
 ```
 
 5. **DELETE** users to ensure no unauthorized users may enter the Board of Trustee's page (to the best of our abilities).
 
-_**Existing code that Zane has done and can be edited to make fit this project:**_
+_**Existing code that Zane has done and can be edited to fit this project:**_
 ```php
 <?php session_start();
 if (!isset($_SESSION['username'])) {
     header("location:index.php");
-    // Make sure that code below does not execute when we redirect.
+    // Make sure that the code below does not execute when we redirect.
     exit;
 }
 
@@ -179,10 +179,10 @@ $sql = "UPDATE games SET opponent='$opponent', site='$site', result='$result' WH
 // else
 
 //TODO: set the error in the session to read "Error updating record: "
-// and append the sql error message from the database
+// and append the SQL error message from the database
 
 
-// TODO: close the db connection
+// TODO: close the DB connection
 header("location:index.php");
 ?>
 ```
