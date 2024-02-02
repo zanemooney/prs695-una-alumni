@@ -32,7 +32,7 @@ The password is incorrect. Please contact Amy Bishop at abishop3@una.edu for hel
 
 ## Vision for ACTUAL Authentication (Two Choices)
 
-<h3>Option 1 | task size = S</h3>
+<h3>Option 1 | task size = S👚</h3>
 
 <p>We stick to the current system we have, however, we (at least) add some basic form of encryption so that the password is not easily accessible (extra brownie points)</p>
 
@@ -43,7 +43,7 @@ Simple code like:
 ```
 Thanks, Cumbie for the reminder!
 
-<h3>Option 2 | task size = L</h3>
+<h3>Option 2 | task size = L👕</h3>
 
 <p>We make an entire CRUD database using very basic PHP, SQL, and HTML.
   
