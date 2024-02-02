@@ -4,6 +4,8 @@ I extend a warm welcome to Zane Mooney's pioneering Capstone Project developed f
 
 ## Project Components
 
+The project will consist of a login screen (login.html) for the Board of Trustees (BOT) for the National Alumni Association (NAA). There will be a prompt asking for a username and a login button, along with the other typical things standard UNA webpages have. Once the user presses the "Login" button, it will go fire into "login.php" 
+
 ### Login Screen (login.html)
 
 ### Authentication Magic
@@ -21,3 +23,7 @@ The password is incorrect. Please contact Amy Bishop at abishop3@una.edu for hel
 <?php
   }
 ?>
+```
+
+#### Vision for Authentication (Two Choices)
+
