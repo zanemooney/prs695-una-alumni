@@ -30,9 +30,9 @@ The password is incorrect. Please contact Amy Bishop at abishop3@una.edu for hel
 
 
 
-#### Vision for ACTUAL Authentication (Two Choices)
+## Vision for ACTUAL Authentication (Two Choices)
 
-<h4>Option 1 | task size = S</h4>
+<h3>Option 1 | task size = S</h3>
 
 <p>We stick to the current system we have, however, we (at least) add some basic form of encryption so that the password is not easily accessible (extra brownie points)</p>
 
