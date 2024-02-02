@@ -28,7 +28,8 @@ The password is incorrect. Please contact Amy Bishop at abishop3@una.edu for hel
 #### Vision for Authentication (Two Choices)
 
 <h4>Option 1 | task size = S</h4>
-We stick to the current system we have, however, we (at least) add some basic form of encryption so that the password is not easily accessible (extra brownie points) 
+
+<p>We stick to the current system we have, however, we (at least) add some basic form of encryption so that the password is not easily accessible (extra brownie points)</p>
 
 Simple code like:
 ```php
@@ -38,5 +39,61 @@ Simple code like:
 Thanks, Cumbie for the reminder!
 
 <h4>Option 2 | task size = L</h4>
-We make an entire CRUD database using very basic php, sql, and html.
+<p>We make an entire CRUD database using very basic php, sql, and html.
 **Functionality (Scope):**
+1. **Create** a new username (following a strict format: firstInitialfirstFourLettersOfLastName ex. zmoon)
+2. **Read** existing usernames in "auth.php"
+
+Existing Code that Zane has Done:
+  
+```php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $endUser = test_input($_POST["enduser"]);
+  $endUserPassword = test_input($_POST["userpass"]);
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "softball";
+
+// TODO: study this code; make sure that you understand it!
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT password FROM users WHERE username = '$endUser'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    if ($row = $result->fetch_assoc()) {
+        $verified = password_verify( $endUserPassword, trim($row['password']));
+        if ($verified) {
+            $_SESSION['username'] = $endUser;
+            $_SESSION['error'] = '';
+        } else {
+            $_SESSION['error'] = 'invalid username or password';
+        }
+    }
+} else {
+    $_SESSION['error'] = 'invalid username or password';
+}
+$conn->close();
+header("location:index.php");
+?>
+
+```
+  
+3. Third item
+4. Fourth item
+</p>
