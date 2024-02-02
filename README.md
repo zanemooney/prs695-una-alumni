@@ -48,10 +48,80 @@ Thanks, Cumbie for the reminder!
 <p>We make an entire CRUD database using very basic PHP, SQL, and HTML.
   
 **Functionality (Scope):**
+
+1. **NEW LOGIN PAGE** (to accept php)
+
+
+**FILE NAME: softball_app\softball_app\index.php**
+```php
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <h2>UNA Softball 2016 Database</h2>
+        <?php
+            if (isset($_SESSION['error'])) {
+                echo "<em>" . $_SESSION['error'] . "</em>";
+                unset($_SESSION['error']);
+            }
+            if (isset($_SESSION['username'])) {
+                $username = $_SESSION['username'];
+                echo "Welcome, $username";
+                include 'menu.html';
+            } else {
+        ?>
+        <h3>Login</h3>
+        <form action="authenticate.php" method="post">
+            Username: <input type="text" name="enduser"><br>
+            Password: <input type="password" name="userpass"><br>
+            <input type="submit">
+        </form>
+        <p/>
+        <?php
+            }
+        ?>
+    </body>
+</html>
+```
   
 1. **Create** a new username (following a strict format: firstInitialfirstFourLettersOfLastName ex. zmoon)
 
 _**Existing code that Zane has done and can be edited to fit this project:**_
+
+***FILE NAME: softball_app\softball_app\insert.php***
+```php
+<?php session_start();
+    if (!isset($_SESSION['username'])) {
+        header("location:index.php");
+        // Make sure that code below does not execute when we redirect.
+        exit;
+    }
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <form action="do_insert.php" method="post">
+            Opponent: <input type="text" name="opponent"><br/>
+            Site: <input type="text" name="site"><br/>
+            Result: <input type="text" name="result"><br />
+            <br/>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
+```
+
+
+
+***FILE NAME: softball_app\softball_app\do_insert.php***
 ```php
 <?php session_start();
     if (!isset($_SESSION['username'])) {
@@ -163,6 +233,9 @@ header("location:index.php");
 4. **DELETE** users to ensure no unauthorized users may enter the Board of Trustee's page (to the best of our abilities).
 
 _**Existing code that Zane has done and can be edited to fit this project:**_
+
+
+***FILE NAME: 
 ```php
 <?php session_start();
 if (!isset($_SESSION['username'])) {
