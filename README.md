@@ -156,6 +156,7 @@ header("location:index.php");
 5. **DELETE** users to ensure no unauthorized users may enter the Board of Trustee's page (to the best of our abilities).
 
 _**Existing code that Zane has done and can be edited to make fit this project:**_
+```php
 <?php session_start();
 if (!isset($_SESSION['username'])) {
     header("location:index.php");
@@ -179,6 +180,8 @@ $sql = "UPDATE games SET opponent='$opponent', site='$site', result='$result' WH
 // TODO: close the db connection
 header("location:index.php");
 ?>
+```
+I will admit there is some work on 4, however, it is basic code that can be filled out.</p>
 
 
-</p>
+
