@@ -44,8 +44,7 @@ Thanks, Cumbie for the reminder!
 1. **Create** a new username (following a strict format: firstInitialfirstFourLettersOfLastName ex. zmoon)
 2. **Read** existing usernames in "auth.php"
 
-Existing Code that Zane has Done:
-  
+_**Existing code that Zane has done and can be edited to make fit this project:**_
 ```php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -94,6 +93,11 @@ header("location:index.php");
 
 ```
   
-3. Third item
-4. Fourth item
+3. **UPDATE** existing usernames (incase of name change or a typo)
+
+
+_**Existing code that Zane has done and can be edited to make fit this project:**_
+
+
+5. Fourth item
 </p>
