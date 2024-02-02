@@ -43,7 +43,7 @@ Simple code like:
 ```
 Thanks, Cumbie for the reminder!
 
-<h4>Option 2 | task size = L</h4>
+<h3>Option 2 | task size = L</h3>
 <p>We make an entire CRUD database using very basic php, sql, and html.
 **Functionality (Scope):**
   
