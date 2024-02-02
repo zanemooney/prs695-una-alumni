@@ -2,11 +2,11 @@
 
 I extend a warm welcome to Zane Mooney's pioneering Capstone Project developed for the Office of Alumni Relations at the University of North Alabama. This project, meticulously crafted for the esteemed Board of Trustees (BOT) of the National Alumni Association, introduces an innovative and secure login system, poised to redefine their digital experience significantly.
 
-## Project Components
+# Project Components:
 
 The project will consist of a login screen (login.html) for the Board of Trustees (BOT) for the National Alumni Association (NAA). There will be a prompt asking for a username and a login button, along with the other typical things standard UNA webpages have. Once the user presses the "Login" button, it will go fire into "login.php" 
 
-## Login Screen (live build: board-login.html)
+## Login Screen (live build: board-login.html):
 
 _**Existing code that is live build:**_
 ```php
@@ -30,9 +30,9 @@ The password is incorrect. Please contact Amy Bishop at abishop3@una.edu for hel
 
 
 
-## Vision for ACTUAL Authentication (Two Choices)
+## Vision for ACTUAL Authentication (Two Choices):
 
-<h3>Option 1 | task size = S👚</h3>
+<h3>Option 1 | task size = S👚:</h3>
 
 <p>We stick to the current system we have, however, we (at least) add some basic form of encryption so that the password is not easily accessible (extra brownie points)</p>
 
@@ -43,7 +43,7 @@ Simple code like:
 ```
 Thanks, Cumbie for the reminder!
 
-<h3>Option 2 | task size = L👕</h3>
+<h3>Option 2 | task size = L👕:</h3>
 
 <p>We make an entire CRUD database using very basic PHP, SQL, and HTML.
   
