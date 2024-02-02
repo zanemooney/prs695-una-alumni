@@ -235,33 +235,72 @@ header("location:index.php");
 _**Existing code that Zane has done and can be edited to fit this project:**_
 
 
-***FILE NAME: 
+***FILE NAME: softball_app\softball_app\delete.php***
 ```php
 <?php session_start();
-if (!isset($_SESSION['username'])) {
-    header("location:index.php");
-    // Make sure that the code below does not execute when we redirect.
-    exit;
-}
+    if (!isset($_SESSION['username'])) {
+        header("location:index.php");
+        // Make sure that code below does not execute when we redirect.
+        exit;
+    }
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+    </head>
+    <body>
+        Enter the ID of the game to delete.
+        <form action="do_delete.php" method="post" 
+              onSubmit="if(confirm('Are you sure?')) return true; return false;">
+            ID: <input type="text" name="id" />
+            <input type="submit" />
+        </form>
+    </body>
+</html>
+```
 
-// TODO: connect to the database
+***FILE NAME: softball_app\softball_app\do_delete.php
+```php
+<?php session_start();
+    if (!isset($_SESSION['username'])) {
+        header("location:index.php");
+        // Make sure that code below does not execute when we redirect.
+        exit;
+    }
+    
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "softball";
 
-// TODO: initialize the variables used in $sql via the POST superglobal
-$sql = "UPDATE games SET opponent='$opponent', site='$site', result='$result' WHERE id=" . $id;
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <?php
+            $sql = "DELETE FROM games WHERE id='$_POST[id]'";
+            // TODO: execute the $sql above and display (right here using echo)
+            // either "Record deleted successfully" or
+            // "Error deleting record: " . $conn->error;
 
-// TODO: execute the query and if it works clear the error in the session
-// (just to make sure)
-// else
-
-//TODO: set the error in the session to read "Error updating record: "
-// and append the SQL error message from the database
-
-
-// TODO: close the DB connection
-header("location:index.php");
+            $conn->close();
+        ?>
+        <a href="index.php">Main menu</a>
+    </body>
+</html>
 ?>
 ```
-I will admit there is some work on 4, however, it is basic code that can be filled out.</p>
+</p>
 
 ## Capstone Potential:
 
