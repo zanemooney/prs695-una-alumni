@@ -190,7 +190,7 @@ header("location:index.php");
 ```
 I will admit there is some work on 4, however, it is basic code that can be filled out.</p>
 
-### Capstone Potential:
+## Capstone Potential:
 
 <p>In option 1, Zane showcases the process of parsing user inputs, extracting an encrypted password, validating the user's input, and directing the user to the Board of Trustees' index page.
 
