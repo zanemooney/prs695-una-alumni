@@ -24,23 +24,11 @@ The password is incorrect. Please contact Amy Bishop at abishop3@una.edu for hel
 ?>
 ```
 
-### Authentication Magic... well...
+## Authentication Magic... well...
 
-_**Existing code that is live build:**_
-```php
-<?php
-  if($_POST["password"] == "1830")
-  {
-    include("board-members-only/board-resources.html");
-  }
-  else
-  {
-?>
-The password is incorrect. Please contact Amy Bishop at abishop3@una.edu for help.
-<?php
-  }
-?>
-```
+<p>Unfortunately, the existing system lacks robust security measures. The code, in its current state, is easily readable, allowing anyone to discern the password directly. The only semblance of security present is a superficial "lock" implemented by Cascade. This deficiency leaves the system vulnerable and underscores the critical need for substantial enhancements in security protocols. It is imperative to fortify the infrastructure, ensuring that confidential information remains safeguarded and inaccessible to unauthorized individuals. The absence of adequate security measures underscores the pressing requirement for a comprehensive and resilient solution to protect sensitive data and uphold the integrity of the system.</p>
+
+
 
 #### Vision for ACTUAL Authentication (Two Choices)
 
