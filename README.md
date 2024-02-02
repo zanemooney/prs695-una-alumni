@@ -43,7 +43,34 @@ Thanks, Cumbie for the reminder!
 **Functionality (Scope):**
   
 1. **Create** a new username (following a strict format: firstInitialfirstFourLettersOfLastName ex. zmoon)
-  
+
+_**Existing code that Zane has done and can be edited to make fit this project:**_
+```php
+<?php session_start();
+    if (!isset($_SESSION['username'])) {
+        header("location:index.php");
+        // Make sure that code below does not execute when we redirect.
+        exit;
+    }
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <form action="do_insert.php" method="post">
+            Opponent: <input type="text" name="opponent"><br/>
+            Site: <input type="text" name="site"><br/>
+            Result: <input type="text" name="result"><br />
+            <br/>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
+```
+
 2. **Read** existing usernames in "auth.php"
 _**Existing code that Zane has done and can be edited to make fit this project:**_
 ```php
