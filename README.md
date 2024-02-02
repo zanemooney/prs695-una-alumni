@@ -44,7 +44,9 @@ Simple code like:
 Thanks, Cumbie for the reminder!
 
 <h3>Option 2 | task size = L</h3>
+
 <p>We make an entire CRUD database using very basic PHP, SQL, and HTML.
+  
 **Functionality (Scope):**
   
 1. **Create** a new username (following a strict format: firstInitialfirstFourLettersOfLastName ex. zmoon)
