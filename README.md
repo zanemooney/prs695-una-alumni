@@ -1,4 +1,4 @@
-# Zane Mooney's PRS695 Capstone Project
+# Zane Mooney's PRS695 Capstone Project 🔥🎆
 
 I extend a warm welcome to Zane Mooney's pioneering Capstone Project developed for the Office of Alumni Relations at the University of North Alabama. This project, meticulously crafted for the esteemed Board of Trustees (BOT) of the National Alumni Association, introduces an innovative and secure login system, poised to redefine their digital experience significantly.
 
