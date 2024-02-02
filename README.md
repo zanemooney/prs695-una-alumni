@@ -261,7 +261,7 @@ _**Existing code that Zane has done and can be edited to fit this project:**_
 </html>
 ```
 
-***FILE NAME: softball_app\softball_app\do_delete.php
+***FILE NAME: softball_app\softball_app\do_delete.php***
 ```php
 <?php session_start();
     if (!isset($_SESSION['username'])) {
