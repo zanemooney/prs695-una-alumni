@@ -160,7 +160,7 @@ header("location:index.php");
 ?>
 ```
 
-5. **DELETE** users to ensure no unauthorized users may enter the Board of Trustee's page (to the best of our abilities).
+4. **DELETE** users to ensure no unauthorized users may enter the Board of Trustee's page (to the best of our abilities).
 
 _**Existing code that Zane has done and can be edited to fit this project:**_
 ```php
