@@ -9,7 +9,7 @@ The project will consist of a login screen (login.html) for the Board of Trustee
 ### Login Screen (login.html)
 
 ### Authentication Magic
-
+_**Existing code that is live build:**_
 ```php
 <?php
   if($_POST["password"] == "1830")
