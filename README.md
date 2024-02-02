@@ -27,3 +27,16 @@ The password is incorrect. Please contact Amy Bishop at abishop3@una.edu for hel
 
 #### Vision for Authentication (Two Choices)
 
+<h4>Option 1 | task size = S</h4>
+We stick to the current system we have, however, we (at least) add some basic form of encryption so that the password is not easily accessible (extra brownie points) 
+
+Simple code like:
+```php
+<?php
+  pass = sha256("1830")
+```
+Thanks, Cumbie for the reminder!
+
+<h4>Option 2 | task size = L</h4>
+We make an entire CRUD database using very basic php, sql, and html.
+**Functionality (Scope):**
