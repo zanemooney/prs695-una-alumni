@@ -41,6 +41,7 @@ Thanks, Cumbie for the reminder!
 <h4>Option 2 | task size = L</h4>
 <p>We make an entire CRUD database using very basic php, sql, and html.
 **Functionality (Scope):**
+  
 1. **Create** a new username (following a strict format: firstInitialfirstFourLettersOfLastName ex. zmoon)
   
 2. **Read** existing usernames in "auth.php"
