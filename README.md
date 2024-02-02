@@ -183,5 +183,12 @@ header("location:index.php");
 ```
 I will admit there is some work on 4, however, it is basic code that can be filled out.</p>
 
+### Capstone Potential:
 
+<p>In option 1, Zane showcases the process of parsing user inputs, extracting an encrypted password, validating the user's input, and directing the user to the Board of Trustees' index page.
+
+With option 2, this Capstone Project demonstrates Zane's dedication to refining user authentication for the Board of Trustees, combining aesthetic appeal with advanced functionality. The proposed enhancements align with contemporary security practices, ensuring a robust and future-proof solution for the University of North Alabama's Office of Alumni Relations.
+
+Both options hold immense potential to serve as compelling proof of concept, showcasing Zane's technical acumen and expertise. Beyond being a mere demonstration, they can yield a fully realized product with practical utility for real-world consumers. By implementing either option, Zane not only demonstrates his proficiency but also produces a solution that addresses tangible needs, making a meaningful impact for the end-users in a real-world context. This combination of theoretical strength and practical application solidifies the project's significance in showcasing Zane's capabilities within the realm of technology and software development.
+</p>
 
