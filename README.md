@@ -51,13 +51,13 @@ Thanks, Cumbie for the reminder!
 
 1. **NEW LOGIN PAGE** (to accept php)
   
-1. **Create** a new username (following a strict format: firstInitialfirstFourLettersOfLastName ex. zmoon)
+2. **CREATE** a new username (following a strict format: firstInitialfirstFourLettersOfLastName ex. zmoon)
 
-2. **Read** existing usernames in "authenticate.php"
+3. **READ** existing usernames in "authenticate.php"
   
-3. **UPDATE** existing usernames (in case of name change or a typo)
+4. **UPDATE** existing usernames (in case of name change or a typo)
 
-4. **DELETE** users to ensure no unauthorized users may enter the Board of Trustee's page (to the best of our abilities).
+5. **DELETE** users to ensure no unauthorized users may enter the Board of Trustee's page (to the best of our abilities).
 
 ## Capstone Potential:
 
