@@ -45,7 +45,7 @@ Thanks, Cumbie for the reminder!
 
 <h3>Option 2 | task size = L👕:</h3>
 
-<p>We make an entire CRUD database using very basic PHP, SQL, and HTML.
+<p>We make an entire CRUD database system using very basic PHP, SQL, and HTML.
   
 **Functionality (Scope):**
 
