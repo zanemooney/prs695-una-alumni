@@ -5,9 +5,9 @@ I extend a warm welcome to Zane Mooney's pioneering Capstone Project developed f
 ## User Story Card
 **As..** Alumni Relations
 
-**I want..** a secure login system for the Alumni Association Board
+**I want..** a secure login system and admin panel for the Alumni Association Board
 
-**So That..** they may access their minutes and other resources.
+**So That..** they may access their minutes and other resources AND allow the office to have full control on usernames.
 
 ## User Story Card
 **As a..** Alumni Association Board member
