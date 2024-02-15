@@ -2,6 +2,16 @@
 
 I extend a warm welcome to Zane Mooney's pioneering Capstone Project developed for the Office of Alumni Relations at the University of North Alabama. This project, meticulously crafted for the esteemed Board of Trustees (BOT) of the National Alumni Association, introduces an innovative and secure login system, poised to redefine their digital experience significantly.
 
+## User Story Card
+**As..** Alumni Relations
+**I want..** a secure login system for the Alumni Association Board
+**So That..** they may access their minutes and other resources.
+
+## User Story Card
+**As a..** Alumni Association Board member
+**I want..** to easily login to my Alumni Association page
+**So That..** I may access the minutes and other resources necessary for my duties.
+
 # Project Components:
 
 The project will consist of a login screen (login.html) for the Board of Trustees (BOT) for the National Alumni Association (NAA). There will be a prompt asking for a username and a login button, along with the other typical things standard UNA webpages have. Once the user presses the "Login" button, it will go fire into "login.php" 
