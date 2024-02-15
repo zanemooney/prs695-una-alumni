@@ -7,22 +7,21 @@ if(!isset($_SESSION['username']) || $_SESSION['username'] !== 'admin') {
     exit();
 }
 
-// Check if form data is submitted
-if(isset($_POST['username']) && isset($_POST['role'])) {
-    $username = $_POST['username'];
-    $role = $_POST['role'];
+// Check if user ID is provided
+if(isset($_POST['id'])) {
+    $id = $_POST['id'];
     
     // Connect to the database
     $pdo = new PDO('mysql:host=localhost;dbname=alumni_database', 'username', 'password');
     
     // Prepare and execute the SQL query
-    $stmt = $pdo->prepare('INSERT INTO users (username, role) VALUES (:username, :role)');
-    $stmt->execute(['username' => $username, 'role' => $role]);
+    $stmt = $pdo->prepare('DELETE FROM users WHERE id = :id');
+    $stmt->execute(['id' => $id]);
     
     // Redirect to admin panel
     header('Location: admin_panel.php');
     exit();
 } else {
-    echo "Form data not provided.";
+    echo "User ID not provided.";
 }
 ?>
