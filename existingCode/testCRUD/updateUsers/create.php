@@ -18,19 +18,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $username = $input_username;
     }
     
-    // Validate address
-    $input_password = trim($_POST["password"]);
-    if(empty($input_password)){
-        $password_err = "Please enter a password (default is 1830).";     
-    } else{
-        $password = $input_password;
-    }
-    
+    // Validate password
+    // $input_password = trim($_POST["password"]);
+  //   if(empty($input_password)){
+  //       $password_err = "Please enter a password (default is 1830).";
+  //   } else{
+  //       $password = $input_password;
+  //   }
+  //  
     
     // Check input errors before inserting in database
     if(empty($name_err) && empty($password_err)){
         // Prepare an insert statement
-        $sql = "INSERT INTO users (name, password) VALUES (?, ?)";
+        $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
          
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -88,11 +88,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
                             <span class="invalid-feedback"><?php echo $username_err;?></span>
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label>Password (default is 1830)</label>
                             <input type="text" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
                             <span class="invalid-feedback"><?php echo $salary_err;?></span>
-                        </div>
+                        </div> -->
                         <input type="submit" class="btn btn-primary" value="Submit">
                         <a href="index.php" class="btn btn-secondary ml-2">Cancel</a>
                     </form>

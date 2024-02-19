@@ -26,14 +26,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // Check if password is empty
-    if(empty(trim($_POST["password"]))){
+    /*if(empty(trim($_POST["password"]))){
         $password_err = "Please enter your password.";
     } else{
         $password = trim($_POST["password"]);
-    }
+    }*/
     
     // Validate credentials
-    if(empty($username_err) && empty($password_err)){
+    if(empty($username_err)){ /* && empty($password_err)){*/
         // Prepare a select statement
         $sql = "SELECT id, username, password FROM users WHERE username = ?";
         
@@ -54,7 +54,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     // Bind result variables
                     mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
                     if(mysqli_stmt_fetch($stmt)){
-                        if(password_verify($password, $hashed_password)){
+                        /*if(password_verify($password, $hashed_password)){*/
                             // Password is correct, so start a new session
                             session_start();
                             
@@ -65,14 +65,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             
                             // Redirect user to welcome page
                             header("location: welcome.php");
-                        } else{
+                        /*} else{
                             // Password is not valid, display a generic error message
                             $login_err = "Invalid username or password.";
-                        }
+                        }*/
                     }
                 } else{
                     // Username doesn't exist, display a generic error message
-                    $login_err = "Invalid username or password.";
+                    $login_err = "Invalid username.";
                 }
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
