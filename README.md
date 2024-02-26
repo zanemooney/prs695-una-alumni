@@ -48,7 +48,7 @@ The password is incorrect. Please contact Amy Bishop at abishop3@una.edu for hel
 
 <h3>Option 1 | task size = M👚 [SELECTED]:</h3>
 
-<p>We stick to the current system we have; however, we (at least) add some basic extra functionality so that the password is not easily accessible (extra brownie points)</p>
+<p>We've opted for enhancing the current system while adding basic extra functionality to make the password less accessible.</p>
 
 Simple code like:
 ```php
@@ -71,7 +71,7 @@ Please enter your password. If you are having issues, please contact the Office 
 ?>
 #passthrough-top-->
 ```
-Thanks, Cumbie for the reminder!
+
 
 <h3>Option 2 | task size = L👕:</h3>
 
@@ -89,12 +89,14 @@ Thanks, Cumbie for the reminder!
 
 5. **DELETE** users to ensure no unauthorized users may enter the Board of Trustee's page (to the best of our abilities).
 
+For proof of concept, we developed Option 2 despite choosing Option 1. The files can be found [here](https://github.com/zanemooney/prs695-una-alumni/tree/main/existingCode/testCRUD). A render may be created for visual purposes.
+
 ## Capstone Potential:
 
 <p>In option 1, Zane showcases the process of parsing user inputs, extracting an encrypted password, validating the user's input, and directing the user to the Board of Trustees' index page.
 
 With option 2, this Capstone Project demonstrates Zane's dedication to refining user authentication for the Board of Trustees, combining aesthetic appeal with advanced functionality. The proposed enhancements align with contemporary security practices, ensuring a robust and future-proof solution for the University of North Alabama's Office of Alumni Relations.
 
-Both options hold immense potential to serve as compelling proof of concept, showcasing Zane's technical acumen and expertise. Beyond being a mere demonstration, they can yield a fully realized product with practical utility for real-world consumers. By implementing either option, Zane not only demonstrates his proficiency but also produces a solution that addresses tangible needs, making a meaningful impact for the end-users in a real-world context. This combination of theoretical strength and practical application solidifies the project's significance in showcasing Zane's capabilities within the realm of technology and software development.
+Both options hold immense potential to serve as compelling proof of concept, showcasing Zane's technical acumen and expertise. Beyond being a mere demonstration, they can yield a fully realized product with practical utility for real-world consumers. By implementing either option, Zane not only demonstrates his proficiency but also produces a solution that addresses tangible needs, making a meaningful impact for the end-users in a real-world context. This combination of theoretical strength and practical application solidifies the project's significance in showcasing Zane's capabilities in technology and software development.
 </p>
 
