@@ -22,7 +22,7 @@ The project will consist of a login screen (login.html) for the Board of Trustee
 
 ## Login Screen (live build: board-login.html):
 
-_**Existing code that is live build:**_
+_**Existing code that is live build (for the foundation's BOT login Page):**_
 ```php
 <?php
   if($_POST["password"] == "1830")
@@ -46,7 +46,7 @@ The password is incorrect. Please contact Amy Bishop at abishop3@una.edu for hel
 
 ## Vision for ACTUAL Authentication (Two Choices):
 
-<h3>Option 1 | task size = M👚 <selected>:</h3>
+<h3>Option 1 | task size = M👚 [SELECTED]:</h3>
 
 <p>We stick to the current system we have; however, we (at least) add some basic extra functionality so that the password is not easily accessible (extra brownie points)</p>
 
