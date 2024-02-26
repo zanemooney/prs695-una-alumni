@@ -89,7 +89,7 @@ Please enter your password. If you are having issues, please contact the Office 
 
 5. **DELETE** users to ensure no unauthorized users may enter the Board of Trustee's page (to the best of our abilities).
 
-For proof of concept, we developed Option 2 despite choosing Option 1. The files can be found [here](https://github.com/zanemooney/prs695-una-alumni/tree/main/existingCode/testCRUD). A render may be created for visual purposes.
+For proof of concept, we developed Option 2 despite the customer choosing Option 1. The files can be found [here](https://github.com/zanemooney/prs695-una-alumni/tree/main/existingCode/testCRUD). A render may be created for visual purposes.
 
 ## Capstone Potential:
 
