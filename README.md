@@ -5,9 +5,9 @@ I extend a warm welcome to Zane Mooney's pioneering Capstone Project developed f
 ## User Story Card
 **As..** Alumni Relations
 
-**I want..** a secure login system and admin panel for the Alumni Association Board
+**I want..** a secure login system ~~and admin panel~~ for the Alumni Association Board
 
-**So That..** they may access their minutes and other resources AND allow the office to have full control on usernames.
+**So That..** they may access their minutes and other resources AND submit their minutes to the alumni1@una.edu email. ~~AND allow the office to have full control on usernames.~~
 
 ## User Story Card
 **As a..** Alumni Association Board member
@@ -18,7 +18,7 @@ I extend a warm welcome to Zane Mooney's pioneering Capstone Project developed f
 
 # Project Components:
 
-The project will consist of a login screen (login.html) for the Board of Trustees (BOT) for the National Alumni Association (NAA). There will be a prompt asking for a username and a login button, along with the other typical things standard UNA webpages have. Once the user presses the "Login" button, it will go fire into "login.php" 
+The project will consist of a login screen (login.html) for the Board of Trustees (BOT) for the National Alumni Association (NAA). There will be a prompt asking for a password and a login button, along with the other typical things standard UNA webpages have. Once the user presses the "Login" button, the passthrough code in the "alumni-board-login.html" will fire.
 
 ## Login Screen (live build: board-login.html):
 
@@ -56,7 +56,7 @@ Simple code like:
 <?php
   if(isset($_POST["password"]) && $_POST["password"] == "1830")
   {
-    //header("Location: test/zmooney/meetings.html");
+    //header("Location: alumni/una-alumni-assoication/meetings.html");
     header('Location: meetings.html');
     exit; // Make sure to exit after redirection
   }
