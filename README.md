@@ -46,14 +46,30 @@ The password is incorrect. Please contact Amy Bishop at abishop3@una.edu for hel
 
 ## Vision for ACTUAL Authentication (Two Choices):
 
-<h3>Option 1 | task size = S👚:</h3>
+<h3>Option 1 | task size = M👚 <selected>:</h3>
 
-<p>We stick to the current system we have, however, we (at least) add some basic form of encryption so that the password is not easily accessible (extra brownie points)</p>
+<p>We stick to the current system we have; however, we (at least) add some basic extra functionality so that the password is not easily accessible (extra brownie points)</p>
 
 Simple code like:
 ```php
+<!--#passthrough-top
 <?php
-  pass = sha256("1830")
+  if(isset($_POST["password"]) && $_POST["password"] == "1830")
+  {
+    //header("Location: test/zmooney/meetings.html");
+    header('Location: meetings.html');
+    exit; // Make sure to exit after redirection
+  }
+  else
+  {
+?>
+<br>
+Please enter your password. If you are having issues, please contact the Office of Alumni Relations.
+<br>
+<?php
+  }
+?>
+#passthrough-top-->
 ```
 Thanks, Cumbie for the reminder!
 
